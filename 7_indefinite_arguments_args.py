@@ -1,3 +1,21 @@
+def tea_order(customer_name, tea_type, *args, **kwargs):
+    print(customer_name, " ordered a", tea_type, "teat")
+    # print("args contains:", args)
+    for arg in args:
+        print("  - Add",arg)
+    for key, value in kwargs.items():
+        print("  - Add:", key, ":", value)
+
+# if milk!=None:
+#     print("  - Add:", milk)
+# if sweetener!=None:
+#     print("  - Add:", sweetener)
+
+    tea_order("Alice", "chamomila")
+    tea_order("Bob", "black", "oat")
+    tea_order("Tony", "black", "oat", "honey", sweetener="honey")
+
+
 # Indefinite Arguments (*args) Practice #1
 # Create a function called sum_squares that takes any number of numeric arguments, and returns the sum of their values squared.
 
@@ -6,6 +24,12 @@
 
 # Indefinite Arguments (*args) Practice #2
 # Create a function called absolute_sum, which takes any number of arguments, and returns the sum of their absolute values (that is, it takes the non-negative values and adds them together, in other words, considers them all - negative and positive - as positive).
+
+
+
+
+
+
 
 # Indefinite Arguments (*args) Practice #3
 # Create a function called personal_numbers that receives, as its first argument, a name, and then an indefinite number of values.
